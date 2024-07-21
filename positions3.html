@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <style>
+             *{
+               color:navy;
+                text-decoration: none;
+             }
+             .container{
+                height: 100vh;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+             }
+             .card{
+                height: 70%;
+                width: 30%;
+                border-radius: 30px;
+                box-shadow: 0px 0px 2px grey;
+                min-width: 400px;
+                min-height: 500px;
+             }
+             .upper{
+                height: 40%;
+                background-color:rgb(76,181,249) ;
+                border-radius: 30px 30px 0px 0px;
+                box-shadow: 0px 0px 2px grey;
+             }
+             .lower{
+                height: 60%;
+                background-color: white;
+                border-radius: 0px 0px 30px 30px;
+                 /* box-shadow: 0px 0px 2px grey; */
+                display: flex;
+                align-items: end;
+                justify-content: center;
+             }
+             .image{
+                display: flex;
+                align-items: center;
+                justify-content: center; 
+                 position: relative;
+                  /* border: 2px solid black; */
+             }
+             img{
+                position: absolute;
+                width: 130px;
+                height: 130px;;
+                border-radius: 100%;
+                border: 3px solid rgb(76,181,249);
+             }
+             p{
+                text-align: center;
+                padding: 20px;
+             }
+             button{
+                width: 60%;
+                background-color: blue;
+                border: none;
+                height: 30px;
+                color: white;
+                border-radius: 20px;
+             }
+    
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <div class="upper"></div>
+            <div class="image"><img src="image1.png" alt=""></div>
+            <div class="lower">
+                <p>
+                 <span style="font-weight: bolder;font-size: 20px;color: black;">Frontend-developer</span><br>
+                 <span style="color: grey;">Tech Job-Services</span>
+                 <br><br>
+                 <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                 <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                 <a href="https://mail.google.com/mail/u/0/?pli=1#inbox" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                <br><br>
+                 <button>Message</button>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
